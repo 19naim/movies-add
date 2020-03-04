@@ -22,5 +22,8 @@ export default {
 </script>
 
 <style scoped>
+    .navbar nav{
+        padding: 0 20px;
+    }
 
 </style>
