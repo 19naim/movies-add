@@ -1,10 +1,14 @@
 <template>
   <div class="index container">
-      <div class="card" v-for="movie in movies" :key="movie.id">
+    <div class="col s12 m6" v-for="movie in movies" :key="movie.id">
+      <div class="card" >
         <div class="card-content">
           <h2 class="indigo-text">{{movie.title}}</h2>
+          <img :src="movie.img" alt="" width="100%">
+          <p>{{movie.genre}}</p>
         </div>
       </div>
+    </div>
   </div>
 </template>
 
@@ -14,9 +18,21 @@ export default {
   data () {
     return {
       movies: [
-       {title: 'Matrix', slug:'matrix', genre: 'Action', id:'1'}, 
-       {title: 'Avengers', slug:'avengers', genre: 'Action', id:'2'}, 
-       {title: 'Terminator', slug:'terminator', genre: 'Action', id:'1'} 
+       {title: 'Matrix',
+        genre: 'Action', 
+        id:'1',
+        img: "https://lh3.googleusercontent.com/proxy/ZjG4QEJ5BoJon2z8nWI3conIUmuRc-VkpE82spIBZ1NQbsvrRNslldgeF1oYCVHUxFIInMy5ZY-l6ylawlcc8HhojhhW"
+      }, 
+       {title: 'Avengers',
+        genre: 'Action', 
+        id:'2',
+        img:"https://images-na.ssl-images-amazon.com/images/I/81DKslYUjcL._SL1500_.jpg"
+        }, 
+
+       {title: 'Terminator',  
+       genre: 'Action', 
+       id:'1',
+       img:"https://images-na.ssl-images-amazon.com/images/I/81yxPkxTOcL._AC_SX342_.jpg"} 
       ]
       
     }
@@ -36,6 +52,10 @@ export default {
   font-size: 1.8em;
   text-align: center;
   margin-top: 0;
+}
+
+#img{
+  height: 600px;
 }
 
 </style>
