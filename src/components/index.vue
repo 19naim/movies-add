@@ -19,14 +19,15 @@ export default {
     return {
       movies: [
        {title: 'Matrix',
+       rating: '*****',
         genre: 'Action', 
         id:'1',
-        img: "https://lh3.googleusercontent.com/proxy/ZjG4QEJ5BoJon2z8nWI3conIUmuRc-VkpE82spIBZ1NQbsvrRNslldgeF1oYCVHUxFIInMy5ZY-l6ylawlcc8HhojhhW"
+        img: "https://cdn.cdon.com/media-dynamic/images/product/00/04/04/49/19/3/1a9716f6-28ee-40d5-8e5a-d4c852542f92.jpg"
       }, 
        {title: 'Avengers',
         genre: 'Action', 
         id:'2',
-        img:"https://images-na.ssl-images-amazon.com/images/I/81DKslYUjcL._SL1500_.jpg"
+        img:"https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg"
         }, 
 
        {title: 'Terminator',  
@@ -52,10 +53,14 @@ export default {
   font-size: 1.8em;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
-#img{
-  height: 600px;
+.card{
+    height: 400px; /* Your height here */
+    overflow: hidden;
 }
+
+
 
 </style>
