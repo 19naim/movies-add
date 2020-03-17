@@ -1,9 +1,10 @@
 <template>
     <div class="add-movies container">
-        <h2 class="center-align indigo.text">Add Movie Details</h2>
+        <h2 class="center-align indigo.text">Add New Movie Details</h2>
         <form action="">
             <div class="field title">
-                
+                <label for="title">Movie Name</label>
+                <input type="text" name="tilte" v-model="title">
             </div>
         </form>
 
@@ -15,7 +16,7 @@ export default {
     name:'AddMovies',
     data(){
         return{
-
+            title:null
         }
     }
     
