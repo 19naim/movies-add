@@ -5,6 +5,14 @@
             <div class="field title">
                 <label for="title">Movie Name</label>
                 <input type="text" name="tilte" v-model="title">
+
+                <label for="title">Poster Url</label>
+                <input type="text" name="tilte" v-model="title">
+
+                <label for="title">Genre</label>
+                <input type="text" name="tilte" v-model="title">
+
+                
             </div>
         </form>
 

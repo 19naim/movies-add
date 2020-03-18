@@ -68,7 +68,7 @@ export default {
 }
 
 .card-content img{
-    height: 500px; /* Your height here */
+    height: 460px; /* Your height here */
     overflow: hidden;
 }
 
